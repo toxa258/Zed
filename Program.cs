@@ -16,7 +16,7 @@ namespace ConsoleApp11
             var conn = new SqlConnection(connStr);
             conn.Open();
             
-            var cmd = new SqlCommand("select * from dbo.Поставка", conn);
+            var cmd = new SqlCommand("select id from dbo.Поставка", conn);
             var reader = cmd.ExecuteReader();
 
             while (reader.Read())
