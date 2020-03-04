@@ -19,14 +19,14 @@
         </asp:GridView>
         <br />
         Товар<br />
-        <asp:TextBox ID="TextBox5" runat="server" Width="87px"></asp:TextBox>
+        <asp:TextBox ID="Products" runat="server" Width="87px"></asp:TextBox>
         <br />
         Количество&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
-        <asp:TextBox ID="TextBox4" runat="server" Width="87px"></asp:TextBox>
+        <asp:TextBox ID="Quantity1" runat="server" Width="87px" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
 &nbsp;
         <br />
-&nbsp;<asp:Button ID="Button1" runat="server" Text="Продать" />
+&nbsp;<asp:Button ID="Add" runat="server" Text="Продать" BorderStyle="None" />
 &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="select p.Id, p.Name, (u.Quantity - a.Quantity) as Quantity from Products p
 left join Sales a on p.Id = a.ProductId
 left  join Supply u on p.Id = u.ProductId" OnSelecting="SqlDataSource1_Selecting">

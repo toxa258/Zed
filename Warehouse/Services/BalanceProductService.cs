@@ -52,6 +52,11 @@ namespace Warehouse.Service
             return list;
         }
 
+        public void AddSupply(int id, int quantity)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Сортировать по дате
         /// </summary>
@@ -165,8 +170,20 @@ namespace Warehouse.Service
             return list;
         }
 
-        
-        
+        public void AddSales(int id, int quantity, string name)
+        {
+            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
+            connection.Open();
+            string sql = @"insert into Sales (ProductId,Name,Quantity)
+                               values (@ProductId,@Name,@Quantity)";
+            SqlCommand command = new SqlCommand(sql, connection);
+            command.Parameters.Add(new SqlParameter("@ProductId", id));
+            command.Parameters.Add(new SqlParameter("@Quantity", quantity));
+            command.Parameters.Add(new SqlParameter("@Name", name));
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
 
     }
 }

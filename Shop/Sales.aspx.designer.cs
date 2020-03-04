@@ -31,31 +31,31 @@ namespace Shop {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// TextBox5 элемент управления.
+        /// Products элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox Products;
         
         /// <summary>
-        /// TextBox4 элемент управления.
+        /// Quantity1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox Quantity1;
         
         /// <summary>
-        /// Button1 элемент управления.
+        /// Add элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button Add;
         
         /// <summary>
         /// SqlDataSource1 элемент управления.
