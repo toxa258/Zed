@@ -31,6 +31,16 @@
 left join Sales a on p.Id = a.ProductId
 left  join Supply u on p.Id = u.ProductId" OnSelecting="SqlDataSource1_Selecting">
         </asp:SqlDataSource>
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
+                <asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" />
+                <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+                <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Sales]"></asp:SqlDataSource>
+        <br />
     </form>
 </body>
 </html>
