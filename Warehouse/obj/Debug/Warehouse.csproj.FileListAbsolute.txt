@@ -21,3 +21,9 @@ C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
 C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
 C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.dll
 C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.pdb
+D:\Zed\Warehouse\bin\Debug\Warehouse.dll
+D:\Zed\Warehouse\bin\Debug\Warehouse.pdb
+D:\Zed\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
+D:\Zed\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
+D:\Zed\Warehouse\obj\Debug\Warehouse.dll
+D:\Zed\Warehouse\obj\Debug\Warehouse.pdb
